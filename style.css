@@ -1,0 +1,105 @@
+/* Resetear estilos y definir estilos básicos de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+/* Estilos para el contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
+    padding: 0px;
+    text-align: center; /* Centra el contenido del formulario */  
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Estilos para dispositivos móviles (Responsive Design) */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/*---FOOTER---*/
+
+.contenedorFooter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.integrantes p {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: #4caf50;
+    font-weight: bolder;
+    max-width: 100%;
+    width: 50%;
+}
+
+.integrantes ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+.integrantes ul li {
+    margin-bottom: 10px;
+}
+

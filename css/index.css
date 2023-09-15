@@ -1,0 +1,57 @@
+/* Estilos para el contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+  
+/* Estilos para el header */
+header {
+    flex: 0.5; /* Ocupa 33% del alto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+  
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+  
+nav ul li a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block; /* Convertir en elemento bloque */
+    padding: 30px; /* Agregar relleno alrededor del enlace */
+    border: 2px solid black; /* Agregar borde blanco */
+    border-bottom: none;
+    transition: background-color 0.3s, color 0.3s; /* Transición para cambios de color */
+}
+nav ul li:last-of-type {
+    border-bottom: 2px solid black;
+}
+nav ul li a:hover {
+    background-color: #4caf50; /* Cambiar el fondo al pasar el mouse */
+    color: white; /* Cambiar el color de texto al pasar el mouse */
+}
+
+nav ul li a.active {
+    background-color: #4caf50; /* Fondo distinto para la vista actual */
+    color: black; /* Cambiar el color de texto para la vista actual */
+}
+
+.song-info img {
+    width: 100%;
+}
+  
+/* Estilos para el main */
+main {
+    flex: 2; /* Ocupa 66% del alto */
+    padding: 20px;
+}
+
+  
