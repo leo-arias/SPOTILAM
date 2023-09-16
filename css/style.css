@@ -19,10 +19,6 @@ body {
     align-items: center;
 }
 
-h2 {
-    text-align: center;
-}
-
 form {
     max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
     padding: 0px;
@@ -33,16 +29,7 @@ label {
     margin-top: 10px;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* input[type="text"],
+input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="date"] {
@@ -52,7 +39,7 @@ input[type="date"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-} */
+}
 
 button {
     background-color: #4caf50;

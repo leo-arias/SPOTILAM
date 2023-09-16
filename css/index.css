@@ -54,6 +54,38 @@ main {
     padding: 20px;
 }
 
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.titulo h1 {
+    margin: 0; /* Elimina el margen superior del título */
+    font-size: 40px;
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+}
+
+.detalles-usuario {
+    display: flex;
+    flex-direction: column; /* Coloca el nombre de usuario y "Cerrar Sesión" uno debajo del otro */
+    align-items: flex-start;
+    margin-right: 15px;
+}
+
+.info-usuario h2 {
+    font-size: 35px;
+    margin: 0; /* Elimina el margen superior del nombre de usuario */
+    margin-bottom: 5px; /* Agrega margen inferior para separar del enlace de cierre de sesión */
+}
+
 .imagen-avatar {
-    width: 10%;
+    width: 100px; /* Ajusta el ancho del avatar según tus preferencias */
+    border: 1px solid black;
 }
