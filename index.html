@@ -9,54 +9,190 @@
 </head>
 <body>
     <div class="main-container">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="buscar.html">Buscar</a></li>
-                    <li><a href="albums.html">Mis Álbums</a></li>
-                    <li><a href="favoritas.html">Mis Favoritas</a></li>
-                </ul>
-            </nav>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="buscar.html">Buscar</a></li>
+                <li><a href="albums.html">Mis Álbums</a></li>
+                <li><a href="favoritas.html">Mis Favoritas</a></li>
+            </ul>
+        
 
             <section class="now-playing">
                 <!-- Información de la canción en reproducción o recomendada -->
                 <div class="song-info">
-                    <img src="img/album.png" alt="Portada del Álbum">
+                    <a href="musica_sonando.html"><img src="img/1.jpg" alt="Portada del Álbum"></a>
                     <h3>After Hours</h3>
                     <p>The Weeknd</p>
-                    <!-- Botón para marcar como favorito -->
-                    <button class="favorite-button">Marcar como Favorito</button>
+                    <a href="favoritas.html"><button class="favorite-button">Marcar como Favorito</button></a>
                 </div>
             </section>
+        </nav>
             
-        </header>
         <main>
-            <div class="container-nav">
-                <div class="titulo">
-                    <h1>SPOTILAM</h1>
-                </div>
-
-                <div class="info-usuario">
-                    <div class="detalles-usuario">
-                        <h2>Gabriel</h2> <!-- Nombre del usuario -->
-                        <a href="login.html">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
+            <header>
+                <div class="container-nav">
+                    <div class="titulo">
+                        <h1>SPOTILAM</h1>
                     </div>
-                    <a href="perfil.html"><img src="img/avatar.png" alt="Avatar de Usuario" class="imagen-avatar"></a> <!-- Avatar del usuario (puede ser una imagen) -->
-                    
+
+                    <div class="info-usuario">
+                        <div class="detalles-usuario">
+                            <h2>Gabriel</h2> <!-- Nombre del usuario -->
+                            <a href="login.html">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
+                        </div>
+                        <a href="perfil.html"><img src="img/avatar.png" alt="Avatar de Usuario" class="imagen-avatar"></a> <!-- Avatar del usuario -->
+                    </div>
                 </div>
-            </div>
-            <!-- <section class="album-grid"> -->
-                <!-- Cuadrícula de álbumes -->
-                <!-- <div class="album"> -->
-                    <!-- <img src="album1.jpg" alt="Portada del Álbum 1"> -->
-                    <!-- Enlace para ver más detalles del álbum -->
-                    <!-- <a href="musica_sonando.html">Ver Álbum</a> -->
-                    <!-- Botón para marcar como favorito -->
-                    <!-- <button class="favorite-button">Marcar como Favorito</button> -->
-                <!-- </div> -->
-                <!-- Repite este bloque para más álbumes -->
-            <!-- </section> -->
+            </header>
+
+            <section class="contenedor">
+        
+                <div class="grid"> <!-- Cuadrícula de álbumes -->
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/1.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">After Hours</p>
+                                <p class="nombre-artista">The Weeknd</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/2.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Beauty Behind The Madness</p>
+                                <p class="nombre-artista">The Weeknd</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/3.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Starboy</p>
+                                <p class="nombre-artista">The Weeknd</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/4.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Positions</p>
+                                <p class="nombre-artista">Ariana Grande</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/5.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">thank u, next</p>
+                                <p class="nombre-artista">Ariana Grande</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/6.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Changes</p>
+                                <p class="nombre-artista">Justin Bieber</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/7.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Justice</p>
+                                <p class="nombre-artista">Justin Bieber</p>
+                            </div>
+                        </a>
+                    </div>
+               
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/8.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Hollywood's Bleeding</p>
+                                <p class="nombre-artista">Post Malone</p>
+                            </div>
+                        </a>
+                    </div>
+              
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/9.jpg" alt="imagen album">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Blond</p>
+                                <p class="nombre-artista">Frank Ocean</p>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/10.jpg" alt="imagenalbuma">
+                            <div class="album-informacion">
+                                <p class="nombre-album">UTOPIA</p>
+                                <p class="nombre-artista">Travis Scott</p>
+                            </div>
+                        </a>
+                    </div>
+               
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/11.jpg" alt="imagenalbuma">
+                            <div class="album-informacion">
+                                <p class="nombre-album">ASTROWORLD</p>
+                                <p class="nombre-artista">Travis Scott</p>
+                            </div>
+                        </a>
+                    </div>
+               
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/12.jpg" alt="imagenalbuma">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Rodeo</p>
+                                <p class="nombre-artista">Travis Scott</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/13.jpg" alt="imagenalbuma">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Dark Lane Demo Tapes</p>
+                                <p class="nombre-artista">Drake</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="album">
+                        <a href="albums.html">
+                            <img class="album-imagen" src="img/14.jpg" alt="imagenalbuma">
+                            <div class="album-informacion">
+                                <p class="nombre-album">Scorpion</p>
+                                <p class="nombre-artista">Drake</p>
+                            </div>
+                        </a>
+                    </div>
+        
+                </div>
+            </section>
+
         </main>
     </div>
 

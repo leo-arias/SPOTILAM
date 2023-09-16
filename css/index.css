@@ -8,7 +8,7 @@
 }
   
 /* Estilos para el header */
-header {
+nav {
     flex: 0.5; /* Ocupa 33% del alto */
     display: flex;
     flex-direction: column;
@@ -89,3 +89,4 @@ main {
     width: 100px; /* Ajusta el ancho del avatar según tus preferencias */
     border: 1px solid black;
 }
+
