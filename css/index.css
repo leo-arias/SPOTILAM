@@ -1,0 +1,92 @@
+/* Estilos para el contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+  
+/* Estilos para el header */
+nav {
+    flex: 0.5; /* Ocupa 33% del alto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+  
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+  
+nav ul li a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block; /* Convertir en elemento bloque */
+    padding: 30px; /* Agregar relleno alrededor del enlace */
+    border: 2px solid black; /* Agregar borde blanco */
+    border-bottom: none;
+    transition: background-color 0.3s, color 0.3s; /* Transición para cambios de color */
+}
+nav ul li:last-of-type {
+    border-bottom: 2px solid black;
+}
+nav ul li a:hover {
+    background-color: #4caf50; /* Cambiar el fondo al pasar el mouse */
+    color: white; /* Cambiar el color de texto al pasar el mouse */
+}
+
+nav ul li a.active {
+    background-color: #4caf50; /* Fondo distinto para la vista actual */
+    color: black; /* Cambiar el color de texto para la vista actual */
+}
+
+.song-info img {
+    width: 100%;
+}
+  
+/* Estilos para el main */
+main {
+    flex: 2; /* Ocupa 66% del alto */
+    padding: 20px;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.titulo h1 {
+    margin: 0; /* Elimina el margen superior del título */
+    font-size: 40px;
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+}
+
+.detalles-usuario {
+    display: flex;
+    flex-direction: column; /* Coloca el nombre de usuario y "Cerrar Sesión" uno debajo del otro */
+    align-items: flex-start;
+    margin-right: 15px;
+}
+
+.info-usuario h2 {
+    font-size: 35px;
+    margin: 0; /* Elimina el margen superior del nombre de usuario */
+    margin-bottom: 5px; /* Agrega margen inferior para separar del enlace de cierre de sesión */
+}
+
+.imagen-avatar {
+    width: 100px; /* Ajusta el ancho del avatar según tus preferencias */
+    border: 1px solid black;
+}
+

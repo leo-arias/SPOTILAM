@@ -1,0 +1,49 @@
+#sesion{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(227, 239, 239);
+    text-align: center;
+    margin-top: 200px ;
+}
+
+img{
+   display: flex;
+   margin-left: 100px ;
+   float: left;
+   padding: 30px 30px 30px 50px;
+   width: 300px;
+}
+
+label {
+    text-align: left;
+    position: relative;/*me hace mover el texto desde donde esta un toque mas para donde quiero*/
+    right: 40px;
+}
+
+input{
+    margin: 20px;
+   padding: 12px;
+}
+
+#registrar{
+    position: relative;
+    left: 240px;
+}
+
+.enviar:hover{
+color: red;
+}
+a:link{
+    color: aquamarine;/*para que el link se cambie de color cuando pasamos por arriba*/
+}
+a:visited{
+color: rgb(164, 17, 238);
+}
+
+a:hover{
+    color: rgb(138, 12, 143);
+}
+
+a:active{
+    color: red;/*para que el link cambie de color cuando lo presionamos*/
+}

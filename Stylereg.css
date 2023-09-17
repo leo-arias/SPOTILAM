@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    padding: 200px;
+    margin-left: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(227, 239, 239);
+}
+
+input{
+    margin: 12px;
+    padding: 12px;
+}
+
+a{
+    position: relative;
+    right: 100px;
+    
+}
+
+#enviar:hover{
+    color: red;
+}
