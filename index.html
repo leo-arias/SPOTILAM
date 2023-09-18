@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <title>SPOTILAM</title>
@@ -12,7 +13,7 @@
         
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html" class="activo">Home</a></li>
                 <li><a href="buscar.html">Buscar</a></li>
                 <li><a href="albums.html">Mis Álbums</a></li>
                 <li><a href="favoritas.html">Mis Favoritas</a></li>
@@ -23,7 +24,7 @@
                 <!-- Información de la canción en reproducción o recomendada -->
                 <div class="song-info">
                     <a href="musica_sonando.html"><img src="img/1.jpg" alt="Portada del Álbum"></a>
-                    <h3>After Hours</h3>
+                    <h3>Blinding Lights</h3>
                     <p>The Weeknd</p>
                     <a href="favoritas.html"><button class="favorite-button">Marcar como Favorito</button></a>
                 </div>
@@ -195,6 +196,12 @@
                 </div>
             </section>
 
+            <section class="reproductor">
+                <audio controls>
+                    <source src="audio/The Weeknd - Blinding Lights.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+
         </main>
     </div>
 
@@ -209,6 +216,6 @@
             </ul>
         </div>
     </footer>
-    
+
 </body>
 </html>
