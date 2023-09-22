@@ -138,6 +138,8 @@ a {
 .contenedorFooter {
     display: flex;
     justify-content: space-evenly;
+    /* margin: 0 20px 10px 20px;
+    border: 1px solid black;  */
 }
 
 .integrantes {
@@ -145,7 +147,7 @@ a {
     flex-direction: column; /* Coloca los elementos en una fila */
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid black; /* Agregar borde blanco */
+    border: 1px solid black; /* Agregar borde negro */
 }
 
 .integrantes p {
@@ -156,7 +158,7 @@ a {
 
 .integrantes ul {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    flex-wrap: wrap; /* Permite que los elementos bajen a la siguiente línea */
     justify-content: center; /* Centra los elementos horizontalmente */
     list-style: none;
     font-size: 18px;
@@ -166,14 +168,14 @@ a {
 
 .integrantes ul li {
     margin-bottom: 10px;
-    width: 40%; /* Establece el ancho de cada nombre al 50% para dos nombres por fila */
+    width: 40%; /* Establece el ancho de cada nombre al 40% para dos nombres por fila */
     text-align: center; /* Centra el texto horizontalmente */
 }
 
 /* GRID ALBUMS */
 .contenedor{
-    max-height: 610px; /* Puedes ajustar la altura según tus preferencias */
-    overflow-y: auto; /* Habilita la barra de desplazamiento vertical cuando sea necesario */
+    max-height: 610px; /* Ajustar la altura */
+    overflow-y: auto; /* Habilita la barra de desplazamiento vertical */
 }
 
 .grid{
@@ -183,6 +185,7 @@ a {
 .album{
     position: relative;
     padding: 10px;
+    
 }
 .nombre-album{
     font-size: 30px;
@@ -199,12 +202,15 @@ a {
     text-align: center;
     line-height: 1.2;
 }
+.album-imagen {
+    border: 2px solid black; /* Agregar borde negro */
+}
 
 /* Estilos para el reproductor */
 .reproductor {
     text-align: center;
     padding: 15px 0;
-    border: 1px solid black; /* Agregar borde blanco */
+    border: 1px solid black; /* Agregar borde negro */
     margin-top: 10px;
 }
 audio {
