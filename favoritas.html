@@ -3,23 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>SPOTILAM</title>
 </head>
 <body>
     
-    <main>
-        <h1>PÁGINA EN CONSTRUCCIÓN</h1>
-    </main>
+    <div class="main-container">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buscar.html">Buscar</a></li>
+                <li><a href="albums.html">Mis Álbums</a></li>
+                <li><a href="favoritas.html" class="activo">Mis Favoritas</a></li>
+            </ul>
+        
+
+            <section class="now-playing">
+                <!-- Información de la canción en reproducción o recomendada -->
+                <div class="song-info">
+                    <a href="musica_sonando.html"><img src="img/1.webp" alt="Portada del Álbum"></a>
+                    <h3>Blinding Lights</h3>
+                    <p>The Weeknd</p>
+                </div>
+            </section>
+        </nav>
+            
+        <main>
+            <header>
+                <div class="container-nav">
+
+                    <div >
+                        <a href="index.html"><img src="img/logoT.webp" alt="logo" class="logo"></a>
+                        <!-- <h1>SPOTILAM</h1> -->
+                    </div>
+
+                    <div class="info-usuario">
+                        <div class="detalles-usuario">
+                            <h2>Gabriel</h2> <!-- Nombre del usuario -->
+                            <a href="login.html">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
+                        </div>
+                        <a href="perfil.html"><img src="img/avatar.png" alt="Avatar de Usuario" class="imagen-avatar"></a> <!-- Avatar del usuario -->
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="titulo-principal">
+                <h1>Mis Canciones Favoritas</h1>
+            </div>
+            
+            <!-- **************************************************************************
+            
+            Aca va el HTML para la lista de canciones favoritas
+
+            ************************************************************************** -->
+
+            <section class="reproductor">
+                <audio controls>
+                    <source src="audio/The Weeknd - Blinding Lights.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+
+        </main>
+    </div>
     
     <footer class="contenedorFooter">
         <div class="integrantes">
             <p>Integrantes</p>
             <ul>
-                <li>Lucas Gavagnin</li>
-                <li>Kevin Cardozo</li>
                 <li>Leonardo Arias</li>
                 <li>Victoria Croce</li>
+                <li>Lucas Gavagnin</li>
+                <li>Kevin Cardozo</li>
             </ul>
         </div>
     </footer>

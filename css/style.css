@@ -62,7 +62,7 @@ nav ul li a.activo {
 /* Estilos para el main */
 main {
     flex: 2; /* Ocupa 66% del alto */
-    padding: 20px;
+    padding: 10px;
 }
 
 .container-nav {
@@ -70,7 +70,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 
 .titulo h1 {
@@ -134,13 +133,6 @@ a {
     color: #007BFF;
 }
 
-/* Estilos para dispositivos móviles (Responsive Design) */
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 90%;
-    }
-}
-
 /*---FOOTER---*/
 /* Estilos para el footer */
 .contenedorFooter {
@@ -180,26 +172,17 @@ a {
 
 /* GRID ALBUMS */
 .contenedor{
-    margin: 0 auto;
-    max-height: 660px; /* Puedes ajustar la altura según tus preferencias */
+    max-height: 610px; /* Puedes ajustar la altura según tus preferencias */
     overflow-y: auto; /* Habilita la barra de desplazamiento vertical cuando sea necesario */
 }
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-}
-@media (min-width: 768px) {
-    .grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
+    grid-template-columns: repeat(4, 1fr);
 }
 .album{
     position: relative;
-    background-color: white;
-    padding: 20px;
-    
+    padding: 10px;
 }
 .nombre-album{
     font-size: 30px;
@@ -217,42 +200,47 @@ a {
     line-height: 1.2;
 }
 
-/* Estilos para la sección del reproductor */
+/* Estilos para el reproductor */
 .reproductor {
     text-align: center;
     padding: 15px 0;
     border: 1px solid black; /* Agregar borde blanco */
-    margin-top: 15px;
-
+    margin-top: 10px;
 }
-
-/* Estilos para el reproductor de audio */
 audio {
     width: 100%;
-    margin: 0 auto;
+}
+audio::-webkit-media-controls-panel {
+    background-color: white;
 }
 
 /* Estilos para la busqueda  */
-
 .buscador-lupa {
-    border: 2px solid black;
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
     position: relative;
+    margin-bottom: 10px;
+}
+.buscador-lupa form {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: 50%;
+    border-radius: 20px;
 }
 .buscadorNav {
-    width: 500px;
     padding: 10px 10px 10px 45px;
-    background-color: transparent;
-    border-radius: 20px;
     border: none;
     font-size: 16px;
+    border-radius: 20px;
+    width: 100%;
 }
 .lupa {
     width: 40px;
     height: 40px;
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 370px;
     background-image: url(../img/lupa.png);
     background-size: 28px 28px;
     background-repeat: no-repeat;
@@ -304,3 +292,10 @@ audio {
     }
 }
   
+.titulo-principal {
+    display: flex;
+    justify-content: center;
+}
+.titulo-principal h1 {
+    margin: 0;
+}
