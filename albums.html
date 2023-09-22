@@ -1,40 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gridAlbums.css">
+    <link rel="stylesheet" href="css/albums.css">
     <title>SPOTILAM</title>
 </head>
 <body>
     
     <div class="main-container">
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="buscar.html">Buscar</a></li>
-                <li><a href="albums.html" class="activo">Mis Álbums</a></li>
-                <li><a href="favoritas.html">Mis Favoritas</a></li>
-            </ul>
-        
 
-            <section class="now-playing">
-                <!-- Información de la canción en reproducción o recomendada -->
-                <div class="song-info">
-                    <a href="musica_sonando.html"><img src="img/sonando.webp" alt="Portada del Álbum"></a>
-                    <h3>Blinding Lights</h3>
-                    <p>The Weeknd</p>
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buscar.html">Buscar</a></li>
+                    <li><a href="albums.html" class="activo">Mis Álbums</a></li>
+                    <li><a href="favoritas.html">Mis Favoritas</a></li>
+                </ul>
+            </nav>
+
+            <section class="musica-sonando">
+                <!-- Información de la canción en reproducción -->
+
+                <div class="album">
+                    <a href="musica_sonando.html" >
+                        <img src="img/sonando.webp" alt="imagen album">
+                        <div class="album-informacion">
+                            <h3 class="nombre-album">Blinding Lights</h3>
+                            <p class="nombre-artista">The Weeknd</p>
+                        </div>
+                    </a>
+
+                    <label class="container-star">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                        </svg>
+                    </label>
                 </div>
             </section>
-        </nav>
-            
-        <main>
+        </div>
+        
+        <div class="contenido-principal">
             <header>
-                <div class="container-nav">
-
-                    <div >
+                <div class="container-header">
+                    <div>
                         <a href="index.html"><img src="img/logoT.webp" alt="logo" class="logo"></a>
                         <!-- <h1>SPOTILAM</h1> -->
                     </div>
@@ -47,536 +61,533 @@
                         <a href="perfil.html"><img src="img/avatar.png" alt="Avatar de Usuario" class="imagen-avatar"></a> <!-- Avatar del usuario -->
                     </div>
                 </div>
-
             </header>
 
-            <div class="titulo-principal">
-                <h1>Mis Albums Favoritos</h1>
-            </div>
-
-            <section class="contenedor">
-        
-                <div class="grid"> <!-- Cuadrícula de álbumes -->
-                
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/1.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Harry's House</p>
-                                <p class="nombre-artista">Harry Styles</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-                        
-                    </div>
-                
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/2.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Folklore</p>
-                                <p class="nombre-artista">Taylor Swift</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/3.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Astroworld</p>
-                                <p class="nombre-artista">Travis Scott</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-                
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/4.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Positions</p>
-                                <p class="nombre-artista">Ariana Grande</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-                
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/5.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Scorpion</p>
-                                <p class="nombre-artista">Drake</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-                
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/6.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Happier Than Ever</p>
-                                <p class="nombre-artista">Billie Eilish</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-               
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/7.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Random Access Memories</p>
-                                <p class="nombre-artista">Daft Punk</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-              
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/8.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Blond</p>
-                                <p class="nombre-artista">Frank Ocean</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-            
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/9.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Starboy</p>
-                                <p class="nombre-artista">The Weeknd</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-               
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/10.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Midnights</p>
-                                <p class="nombre-artista">Taylor Swift</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-               
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/11.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Changes</p>
-                                <p class="nombre-artista">Justin Bieber</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-                
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/12.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Did You Know That There's a Tunnel Under Ocean Blvd</p>
-                                <p class="nombre-artista">Lana Del Rey</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-                
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/13.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Graduation</p>
-                                <p class="nombre-artista">Kanye West</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/14.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">30</p>
-                                <p class="nombre-artista">Adele</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/15.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Hollywood's Bleeding</p>
-                                <p class="nombre-artista">Post Malone</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/16.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Sweetener</p>
-                                <p class="nombre-artista">Ariana Grande</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/17.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Future Nostalgia</p>
-                                <p class="nombre-artista">Dua Lipa</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/18.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Beauty Behind the Madness</p>
-                                <p class="nombre-artista">The Weeknd</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/19.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Red (Taylor's Version)</p>
-                                <p class="nombre-artista">Taylor Swift</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/20.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Justice</p>
-                                <p class="nombre-artista">Justin Bieber</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/21.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Fine Line</p>
-                                <p class="nombre-artista">Harry Styles</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/22.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">SOS</p>
-                                <p class="nombre-artista">SZA</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/23.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Yeezus</p>
-                                <p class="nombre-artista">Kanye West</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/24.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">When We All Fall Asleep, Where Do We Go?</p>
-                                <p class="nombre-artista">Billie Eilish</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/25.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Paradise</p>
-                                <p class="nombre-artista">Lana Del Rey</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/26.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Utopia</p>
-                                <p class="nombre-artista">Travis Scott</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/27.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Dark Lane Demo Tapes</p>
-                                <p class="nombre-artista">Drake</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-
-                    <div class="album">
-                        <a href="albums.html">
-                            <img class="album-imagen" src="img/28.webp" alt="imagen album">
-                            <div class="album-informacion">
-                                <p class="nombre-album">Lover</p>
-                                <p class="nombre-artista">Taylor Swift</p>
-                            </div>
-                        </a>
-
-                        <label class="container-star">
-                            <input type="checkbox">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                            </svg>
-                        </label>
-
-                    </div>
-        
+            <main>
+                <div class="titulo-principal">
+                    <h1>Mis Albums Favoritos</h1>
                 </div>
-            </section>
+
+                <section class="contenedor">
+                    <div class="grid"> <!-- Cuadrícula de álbumes -->
+                    
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/1.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Harry's House</p>
+                                    <p class="nombre-artista">Harry Styles</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+                            
+                        </div>
+                    
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/2.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Folklore</p>
+                                    <p class="nombre-artista">Taylor Swift</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/3.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Astroworld</p>
+                                    <p class="nombre-artista">Travis Scott</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                    
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/4.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Positions</p>
+                                    <p class="nombre-artista">Ariana Grande</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                    
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/5.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Scorpion</p>
+                                    <p class="nombre-artista">Drake</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                    
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/6.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Happier Than Ever</p>
+                                    <p class="nombre-artista">Billie Eilish</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/7.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Random Access Memories</p>
+                                    <p class="nombre-artista">Daft Punk</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/8.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Blond</p>
+                                    <p class="nombre-artista">Frank Ocean</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/9.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Starboy</p>
+                                    <p class="nombre-artista">The Weeknd</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/10.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Midnights</p>
+                                    <p class="nombre-artista">Taylor Swift</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/11.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Changes</p>
+                                    <p class="nombre-artista">Justin Bieber</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                    
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/12.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Did You Know That There's a Tunnel Under Ocean Blvd</p>
+                                    <p class="nombre-artista">Lana Del Rey</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+                    
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/13.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Graduation</p>
+                                    <p class="nombre-artista">Kanye West</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/14.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">30</p>
+                                    <p class="nombre-artista">Adele</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/15.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Hollywood's Bleeding</p>
+                                    <p class="nombre-artista">Post Malone</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/16.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Sweetener</p>
+                                    <p class="nombre-artista">Ariana Grande</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/17.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Future Nostalgia</p>
+                                    <p class="nombre-artista">Dua Lipa</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/18.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Beauty Behind the Madness</p>
+                                    <p class="nombre-artista">The Weeknd</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/19.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Red (Taylor's Version)</p>
+                                    <p class="nombre-artista">Taylor Swift</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/20.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Justice</p>
+                                    <p class="nombre-artista">Justin Bieber</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/21.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Fine Line</p>
+                                    <p class="nombre-artista">Harry Styles</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/22.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">SOS</p>
+                                    <p class="nombre-artista">SZA</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/23.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Yeezus</p>
+                                    <p class="nombre-artista">Kanye West</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/24.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">When We All Fall Asleep, Where Do We Go?</p>
+                                    <p class="nombre-artista">Billie Eilish</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/25.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Paradise</p>
+                                    <p class="nombre-artista">Lana Del Rey</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/26.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Utopia</p>
+                                    <p class="nombre-artista">Travis Scott</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/27.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Dark Lane Demo Tapes</p>
+                                    <p class="nombre-artista">Drake</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+
+                        <div class="album">
+                            <a href="albums.html">
+                                <img class="album-imagen" src="img/28.webp" alt="imagen album">
+                                <div class="album-informacion">
+                                    <p class="nombre-album">Lover</p>
+                                    <p class="nombre-artista">Taylor Swift</p>
+                                </div>
+                            </a>
+
+                            <label class="container-star">
+                                <input type="checkbox">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                </svg>
+                            </label>
+
+                        </div>
+            
+                    </div>
+                </section>
+            </main>
 
             <section class="reproductor">
                 <audio controls>
                     <source src="audio/The Weeknd - Blinding Lights.mp3" type="audio/mpeg">
                 </audio>
             </section>
-
-        </main>
+        </div>
     </div>
     
     <footer class="contenedorFooter">
         <div class="integrantes">
-            <p>Integrantes</p>
             <ul>
                 <li>Leonardo Arias</li>
                 <li>Victoria Croce</li>

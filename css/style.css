@@ -1,307 +1,135 @@
 /* Resetear estilos y definir estilos básicos de la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Fuente para el cuerpo del documento */
+    /* font-family: 'Baumans', cursive; */
     margin: 0;
     padding: 0;
 }
-
 img {
-    width: 100%;
+    width: 100%; /* Ajusta todas las imágenes al ancho del contenedor */
+}
+a {
+    text-decoration: none; /* Quita subrayado de los enlaces */
 }
 
-/* Estilos para el contenedor principal */
+/* ESTILOS PARA EL CONTENEDOR PRINCIPAL */
 .main-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
 }
-  
-/* Estilos para el header */
-nav {
-    flex: 0.5; /* Ocupa 33% del alto */
+
+/* ESTILOS PARA EL SIDEBAR */
+.sidebar {
+    flex: 0.5; /* Ocupa 33% del ancho */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 10px;
 }
-  
+
+/* Estilos para el Nav */
 nav ul {
-    list-style: none;
+    list-style: none; /* Quita viñetas de la lista */
     padding: 0;
 }
-  
 nav ul li a {
-    color: black;
-    font-weight: bolder;
-    text-decoration: none;
-    display: block; /* Convertir en elemento bloque */
-    padding: 30px; /* Agregar relleno alrededor del enlace */
-    border: 2px solid black; /* Agregar borde blanco */
-    border-bottom: none;
+    color: black; /* Color de texto */
+    font-weight: bolder; /* Fuente en negrita */
+    display: block; /* Convertir en elemento bloque para ocupar todo el ancho */
+    padding: 30px; /* Agrega relleno alrededor del enlace */
+    border: 2px solid black; /* Agrega borde negro */
+    border-bottom: none; /* Quita borde inferior */
     transition: background-color 0.3s, color 0.3s; /* Transición para cambios de color */
 }
 nav ul li:last-of-type {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid black; /* Agrega borde negro */
 }
 nav ul li a:hover {
-    background-color: #4caf50; /* Cambiar el fondo al pasar el mouse */
-    color: white; /* Cambiar el color de texto al pasar el mouse */
+    background-color: #4caf50; /* Cambia el fondo al pasar el mouse */
+    color: white; /* Cambia el color de texto al pasar el mouse */
 }
 
 nav ul li a.activo {
     background-color: #4caf50; /* Fondo distinto para la vista actual */
-    color: black; /* Cambiar el color de texto para la vista actual */
+    color: black; /* Cambia el color de texto para la vista actual */
 }
 
-.song-info img {
-    width: 100%;
+/* Estilos para Musica Sonando */
+.musica-sonando .album {
+    padding: 0; /* Elimina el padding */
 }
-  
-/* Estilos para el main */
-main {
-    flex: 2; /* Ocupa 66% del alto */
-    padding: 10px;
+.musica-sonando h3,
+.musica-sonando p{
+    text-align: start; /* Alinear texto a la izquierda */
+}
+.musica-sonando .container-star {
+    top: 20px;
+    right: 20px;
 }
 
-.container-nav {
+/* ESTILOS PARA EL CONTENIDO PRINCIPAL */
+.contenido-principal {
+    flex: 2; /* Ocupa 66% del ancho */
+    padding: 0 10px; /* Agrega relleno izq y der */
+}
+
+/* ESTILOS PARA EL HEADER */
+.container-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Distribuir elementos en el espacio disponible */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 10px;
 }
-
-.titulo h1 {
-    margin: 0; /* Elimina el margen superior del título */
-    font-size: 40px;
+.logo {
+    width: 75%; /* Ajusta el ancho del logo*/
 }
-
 .info-usuario {
     display: flex;
     align-items: center;
 }
-
 .detalles-usuario {
-    display: flex;
-    flex-direction: column; /* Coloca el nombre de usuario y "Cerrar Sesión" uno debajo del otro */
-    align-items: flex-start;
     margin-right: 15px;
 }
-
 .info-usuario h2 {
-    font-size: 35px;
+    font-size: 35px; /* Tamaño de fuente */
     margin: 0; /* Elimina el margen superior del nombre de usuario */
-    margin-bottom: 5px; /* Agrega margen inferior para separar del enlace de cierre de sesión */
+    margin-bottom: 5px; /* Margen inferior para separar el nombre de usuario del enlace de cierre de sesión */
 }
-
 .imagen-avatar {
-    width: 100px; /* Ajusta el ancho del avatar según tus preferencias */
-    border: 1px solid black;
+    width: 100px; /* Ajusta el ancho del avatar*/
+    border: 1px solid black; /* Agrega borde negro */
 }
 
-.logo {
-    width: 75%;
+/* ESTILOS PARA EL REPRODUCTOR */
+.reproductor {
+    padding: 15px 0;
+    border: 1px solid black; /* Agrega borde negro */
+    margin: 10px;
+}
+audio {
+    width: 100%; /* Ajusta el ancho del reproductor */
+}
+audio::-webkit-media-controls-panel {
+    background-color: white; /* Establece el fondo de los controles de audio */
 }
 
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-  
-/* Estilos para el contenedor del formulario */
-.form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-/*---FOOTER---*/
-/* Estilos para el footer */
+/* ESTILOS PARA EL FOOTER */
 .contenedorFooter {
     display: flex;
-    justify-content: space-evenly;
-    /* margin: 0 20px 10px 20px;
-    border: 1px solid black;  */
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
-
 .integrantes {
-    display: flex;
-    flex-direction: column; /* Coloca los elementos en una fila */
-    align-items: center;
-    margin-bottom: 10px;
-    border: 1px solid black; /* Agregar borde negro */
+    border: 1px solid black; /* Agrega borde negro */
 }
-
-.integrantes p {
-    font-size: 20px;
-    color: #4caf50;
-    font-weight: bolder;
-}
-
 .integrantes ul {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos bajen a la siguiente línea */
     justify-content: center; /* Centra los elementos horizontalmente */
-    list-style: none;
-    font-size: 18px;
+    list-style: none; /* Quita viñetas de la lista */
+    font-size: 18px; /* Tamaño de fuente */
     margin: 0;
     padding: 0;
 }
-
 .integrantes ul li {
-    margin-bottom: 10px;
+    margin: 5px;
     width: 40%; /* Establece el ancho de cada nombre al 40% para dos nombres por fila */
     text-align: center; /* Centra el texto horizontalmente */
-}
-
-/* GRID ALBUMS */
-.contenedor{
-    max-height: 610px; /* Ajustar la altura */
-    overflow-y: auto; /* Habilita la barra de desplazamiento vertical */
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-.album{
-    position: relative;
-    padding: 10px;
-    
-}
-.nombre-album{
-    font-size: 30px;
-    color: black;
-    font-weight: bolder;
-}
-.nombre-artista{
-    font-size: 25px;
-    color: black;
-}
-.nombre-album,
-.nombre-artista{
-    margin: 15px 0;
-    text-align: center;
-    line-height: 1.2;
-}
-.album-imagen {
-    border: 2px solid black; /* Agregar borde negro */
-}
-
-/* Estilos para el reproductor */
-.reproductor {
-    text-align: center;
-    padding: 15px 0;
-    border: 1px solid black; /* Agregar borde negro */
-    margin-top: 10px;
-}
-audio {
-    width: 100%;
-}
-audio::-webkit-media-controls-panel {
-    background-color: white;
-}
-
-/* Estilos para la busqueda  */
-.buscador-lupa {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 10px;
-}
-.buscador-lupa form {
-    display: flex;
-    justify-content: center;
-    border: 2px solid black;
-    width: 50%;
-    border-radius: 20px;
-}
-.buscadorNav {
-    padding: 10px 10px 10px 45px;
-    border: none;
-    font-size: 16px;
-    border-radius: 20px;
-    width: 100%;
-}
-.lupa {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 5px;
-    left: 370px;
-    background-image: url(../img/lupa.png);
-    background-size: 28px 28px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: 0px;
-}
-
-/* Estilos para la estrella */
-.container-star {
-    position: absolute;
-    cursor: pointer;
-    top: 30px;
-    right: 30px;
-}
-.container-star input {
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-.container-star svg {
-    height: 50px;
-    width: 50px;
-    transition: all 0.3s;
-    fill: white;
-    stroke: black;
-    stroke-width: 1px;
-}
-.container-star svg:hover {
-    transform: scale(1.3);
-}
-
-.container-star input:checked ~ svg {
-    fill: yellow;
-    animation: pop_42 0.5s ease-out;
-    transform: scale(1.3);
-}
-@keyframes pop_42 {
-    0% {
-      transform: scale(1.3);
-    }
-  
-    50% {
-      transform: scale(1.5);
-    }
-  
-    100% {
-      transform: scale(1.3);
-    }
-}
-  
-.titulo-principal {
-    display: flex;
-    justify-content: center;
-}
-.titulo-principal h1 {
-    margin: 0;
 }

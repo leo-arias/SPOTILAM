@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <title>SPOTILAM</title>
 </head>
 <body>
 
     <main>
-        <div class="container form-container">
+        <a href="index.html"><img src="img/logoT.webp" alt="logo"></a>
+        <div class="form-container">
             <h1>Registro de Usuario</h1>
             <form action="login.html">
                 <label for="nombre_usuario">Nombre de Usuario:</label>
@@ -29,19 +30,23 @@
                 <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
                 <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
         
-                <label for="premium">Opción de Premium:</label>
-                <input type="checkbox" id="premium" name="premium">
-        
-                <button type="submit">Registrarse</button>
+                <div class="premium">
+                    <label for="premium">Opción de Premium:</label>
+                    <input type="checkbox" id="premium" name="premium">
+                </div>
+
+                <div class="boton">
+                    <button type="submit">Registrarse</button>
+                    <p>¿Ya tenes una cuenta? <a href="login.html">Iniciar Sesión</a></p>
+                </div>
             </form>
-            <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesión</a></p>
+            
         </div>
     </main>
 
     <footer class="contenedorFooter">
         <div class="integrantes">
-            <p>Integrantes</p>
-            <ul>
+            <ul> <!-- Lista de integrantes del grupo -->
                 <li>Leonardo Arias</li>
                 <li>Victoria Croce</li>
                 <li>Lucas Gavagnin</li>

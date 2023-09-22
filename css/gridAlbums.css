@@ -1,0 +1,94 @@
+/* Estilos para el contenedor de álbumes */
+.contenedor {
+    max-height: 603px; /* Ajusta la altura máxima del contenedor */
+    overflow-y: auto; /* Habilita la barra de desplazamiento vertical */
+}
+
+/* Estilos para el diseño de cuadrícula */
+.grid {
+    display: grid; /* Usa diseño de cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual tamaño en la cuadrícula */
+}
+
+/* Estilos para el título principal */
+.titulo-principal {
+    display: flex;
+    justify-content: center; /* Centra elementos horizontalmente */
+}
+.titulo-principal h1 {
+    margin: 0; /* Elimina el margen superior del título principal */
+}
+
+/* Estilos para el elemento de álbum */
+.album {
+    position: relative; /* Establece la posición relativa con respecto a la estrella */
+    padding: 10px; /* Agrega relleno alrededor del elemento de álbum */
+}
+
+/* Estilos para el nombre del álbum y el nombre del artista */
+.nombre-album {
+    font-size: 30px; /* Tamaño de fuente */
+    color: black;
+    font-weight: bolder; /* Fuente en negrita */
+}
+.nombre-artista {
+    font-size: 25px; /* Tamaño de fuente */
+    color: black;
+}
+.nombre-album,
+.nombre-artista {
+    margin: 10px 0; /* Establece márgenes superior e inferior */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos para la imagen del álbum */
+.album-imagen {
+    border: 2px solid black; /* Agrega borde negro */
+}
+
+/* Estilos para la estrella */
+.container-star {
+    position: absolute; /* Establece la posición absoluta con respecto al album */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    top: 30px;
+    right: 30px;
+}
+.container-star input {
+    opacity: 0; /* Oculta el input checkbox */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    height: 0;
+    width: 0;
+}
+.container-star svg {
+    height: 50px; /* Establece el tamaño de la estrella */
+    width: 50px;
+    transition: all 0.3s; /* Agrega la transición */
+    fill: white; /* Color de relleno de la estrella */
+    stroke: black; /* Color del contorno de la estrella */
+    stroke-width: 1px; /* Ancho del contorno de la estrella */
+}
+.container-star svg:hover {
+    transform: scale(1.3); /* Escala la estrella al pasar el mouse */
+}
+
+/* Estilos para la estrella cuando está seleccionada */
+.container-star input:checked ~ svg {
+    fill: yellow; /* Cambia el color de relleno cuando la estrella está seleccionada */
+    animation: pop_42 0.5s ease-out; /* Agrega animación */
+    transform: scale(1.3); /* Escala la estrella cuando está seleccionada */
+}
+
+/* Animación para la estrella seleccionada */
+@keyframes pop_42 {
+    0% {
+      transform: scale(1.3);
+    }
+  
+    50% {
+      transform: scale(1.5);
+    }
+  
+    100% {
+      transform: scale(1.3);
+    }
+}
