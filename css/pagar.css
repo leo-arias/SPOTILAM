@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 50px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 281px;
+}
+
+.form{
+    margin-top: 200px;
+    margin-left: 700px;
+}
+#tarjeta{
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 700px;
+    width: 400px;
+}
+.controls {
+    width: 200px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #0d00ff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+.boton {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: 'calibri';
+    font-size: 18px;
+    background: linear-gradient(rgb(0, 17, 255), rgb(74, 100, 133), rgb(31, 124, 163));
+    color: white;
+    border: none;
+    margin-left: 100px;
+}
+.boton:hover {
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 8px;
+}
+
+

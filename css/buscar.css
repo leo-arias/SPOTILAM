@@ -1,8 +1,3 @@
-/* GRID ALBUMS */
-.contenedor{
-    max-height: 552px; /* Ajustar la altura */
-}
-
 /* Estilos para la barra de busqueda  */
 .buscador-lupa {
     display: flex;
@@ -13,7 +8,6 @@
 .buscador-lupa form {
     display: flex; 
     justify-content: center; /* Centra los elementos horizontalmente */
-    border: 2px solid black; /* Agrega borde negro */
     width: 50%;
     border-radius: 20px; /* Establece borde redondeado */
 }

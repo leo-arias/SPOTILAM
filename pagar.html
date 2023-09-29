@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pagar.css">
     <title>SPOTILAM</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
 
             <div class="info-usuario">
                 <div class="detalles-usuario">
-                    <h2>Gabriel</h2> <!-- Nombre del usuario -->
+                    <a href="perfil.html"><h2>Nombre</h2></a> <!-- Nombre del usuario -->
                     <a href="login.html">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
                 </div>
                 <a href="perfil.html"><img src="img/avatar.png" alt="Avatar de Usuario" class="imagen-avatar"></a> <!-- Avatar del usuario -->
@@ -24,26 +26,33 @@
     </header>
 
     <main>
+        <h1>Elegiste el Plan</h1>
         
-        
-        <!-- **************************************************************************
-        
-        Aca va el HTML para pagar
-        
-        ************************************************************************** -->
+        <img src="img/tarjeta.png" alt="tarjeta" id="tarjeta">
+
+        <section class="form">
+        <form action="" class="inputs">
+            <input class="controls" type="number" placeholder="Numero de tarjeta" required>
+            <input class="controls" type="date" required>
+        <div id="segundos">
+            <input class="controls" type="text" placeholder="Código de seguridad" required>
+            <input class="controls" type="text" placeholder="Nombre del titular" required>
+        </div>
+            <a href="index.html"><input type="button" class="boton" value="Cancelar"></a>
+            <a href="index.html"><input type="button" class="boton" value="Pagar"></a>
+            
+        </form>
         
         
     </main>
     
     <footer class="contenedorFooter">
-        <div class="integrantes">
-            <ul> <!-- Lista de integrantes del grupo -->
-                <li>Leonardo Arias</li>
-                <li>Victoria Croce</li>
-                <li>Lucas Gavagnin</li>
-                <li>Kevin Cardozo</li>
-            </ul>
-        </div>
+        <p>Integrantes</p>
+        <ul class="nombres"> <!-- Lista de integrantes del grupo -->
+            <li>Lucas Daniel Gavagnin</li>
+            <li>Victoria Gisel Croce</li>
+            <li>Leonardo Arias</li>
+        </ul>
     </footer>
     
 </body>

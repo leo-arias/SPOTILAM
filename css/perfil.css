@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(rgb(0, 0, 0), rgb(52, 52, 52)) center;
+}
+main {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container-header {
+    margin: 0;
+}
+
+.grid {
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(210px, 1fr));;
+    grid-template-rows: repeat(2, minmax(400px, 1fr));
+    grid-template-areas: 
+    "elemento1 elemento1 elemento2"
+    "elemento3 elemento3 elemento3"
+    ;
+    gap: 30px;
+}
+
+.items {
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 25px #000;
+    background: linear-gradient(rgb(95, 97, 95), rgb(255, 255, 255));
+}
+
+.item1 {
+    grid-area: elemento1;
+    padding: 25px;
+   
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));;
+    grid-template-rows: repeat(2, minmax(50px, 1fr));
+    grid-template-areas: 
+    "item1 item1 item2"
+    ". . item3"
+    ;
+}
+
+.item2 {
+    grid-area: elemento2;
+    background-color: rgb(75, 71, 71);
+    padding: 40px 10px 50px 10px;
+
+    display: grid;
+    grid-template-columns: repeat(1, minmax(50px, 1fr));;
+    grid-template-rows: repeat(3, minmax(40px, 0.5fr));
+    grid-template-areas: 
+    "item1"
+    "item1"
+    "item2"
+    ;
+    gap: 20px;
+}
+
+.item3 {
+    grid-area: elemento3;
+    background-color: rgb(75, 71, 71);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.texto {
+    grid-area: item1;
+    text-align: left;
+}
+
+.texto h1 {
+    font-size: 70px;
+}
+
+.texto p {
+    font-size: 20px;
+}
+
+.form {
+    grid-area: item3;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.boton {
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(230, 223, 223);
+    border-radius: 10px;
+    box-shadow: 0 0 5px #303030;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
+}
+
+.avatar {
+    width: 200px;
+    grid-area: item1;
+    display: flex;
+    justify-self: center;
+}
+
+.texto-avatar {
+    grid-area: item2;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.texto-avatar p {
+    font-size: large;
+    margin: 10px;
+}
+
+.texto-avatar p a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.texto-avatar p a:hover {
+    color: beige;
+    cursor: pointer;
+}
+
+.item3 h1 {
+    font-size: 50px;
+}
+
+.item3 .form2 {
+    display: grid;
+    padding-top: 10px;
+    height: 100%;
+    width: 80%;
+    grid-template-columns: repeat(3, minmax(20px, 1fr));;
+    grid-template-rows: repeat(3, minmax(40px, 0.5fr));
+    grid-template-areas: 
+    "nombre contra contra2"
+    "correo1 correo2 telefono"
+    "boton boton boton"
+    ;
+    gap: 10px;
+}
+
+.controls {
+    border-radius: 12px;
+    background: rgb(73, 70, 70);
+    border: none;
+    padding: 10px;
+    height: 50%;
+    width: 100%;
+}
+
+.usuario {
+    grid-area: nombre;
+}
+
+.contraseñas {
+    grid-area: contra;
+}
+
+.usuario {
+    grid-area: nombre;
+    
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.contra1 {
+    grid-area: contra;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.contra2 {
+    grid-area: contra2;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.corr1 {
+    grid-area: correo1;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.corr2 {
+    grid-area: correo2;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.tel {
+    grid-area: telefono;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.botones {
+    grid-area: boton;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

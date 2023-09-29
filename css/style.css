@@ -1,14 +1,22 @@
 /* Resetear estilos y definir estilos básicos de la página */
-body {
-    font-family: Arial, sans-serif; /* Fuente para el cuerpo del documento */
-    /* font-family: 'Baumans', cursive; */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente para el cuerpo del documento */
+    background: linear-gradient(black, rgb(130, 96, 44), rgb(107, 8, 236)) no-repeat center;
 }
 img {
     width: 100%; /* Ajusta todas las imágenes al ancho del contenedor */
 }
+p, h1, h2, h3 {
+    color: white;
+}
 a {
+    color: white;
     text-decoration: none; /* Quita subrayado de los enlaces */
 }
 
@@ -19,10 +27,15 @@ a {
 
 /* ESTILOS PARA EL SIDEBAR */
 .sidebar {
-    flex: 0.5; /* Ocupa 33% del ancho */
     display: flex;
     flex-direction: column;
     padding: 10px;
+    position: fixed; /* Fija el sidebar en la posición especificada */
+    top: 0; /* Coloca el sidebar en la parte superior de la página */
+    left: 0; /* Coloca el sidebar en la parte izquierda de la página */
+    height: 100%; /* Establece la altura del sidebar al 100% del viewport */
+    width: 350px; /* Ajusta el ancho del sidebar según tus preferencias */
+    background: linear-gradient( black, rgb(50, 49, 49));
 }
 
 /* Estilos para el Nav */
@@ -31,7 +44,7 @@ nav ul {
     padding: 0;
 }
 nav ul li a {
-    color: black; /* Color de texto */
+    font-size: 25px;
     font-weight: bolder; /* Fuente en negrita */
     display: block; /* Convertir en elemento bloque para ocupar todo el ancho */
     padding: 30px; /* Agrega relleno alrededor del enlace */
@@ -54,20 +67,20 @@ nav ul li a.activo {
 
 /* Estilos para Musica Sonando */
 .musica-sonando .album {
-    padding: 0; /* Elimina el padding */
+    padding: 20px 0 0 0; /* Elimina el padding */
 }
 .musica-sonando h3,
 .musica-sonando p{
     text-align: start; /* Alinear texto a la izquierda */
 }
 .musica-sonando .container-star {
-    top: 20px;
+    top: 35px;
     right: 20px;
 }
 
 /* ESTILOS PARA EL CONTENIDO PRINCIPAL */
 .contenido-principal {
-    flex: 2; /* Ocupa 66% del ancho */
+    margin-left: 350px; /* Ajusta el margen izquierdo para acomodar el ancho del sidebar */
     padding: 0 10px; /* Agrega relleno izq y der */
 }
 
@@ -95,7 +108,6 @@ nav ul li a.activo {
 }
 .imagen-avatar {
     width: 100px; /* Ajusta el ancho del avatar*/
-    border: 1px solid black; /* Agrega borde negro */
 }
 
 /* ESTILOS PARA EL REPRODUCTOR */
@@ -103,33 +115,40 @@ nav ul li a.activo {
     padding: 15px 0;
     border: 1px solid black; /* Agrega borde negro */
     margin: 10px;
+    background-color: rgb(107, 8, 236);
 }
 audio {
     width: 100%; /* Ajusta el ancho del reproductor */
 }
-audio::-webkit-media-controls-panel {
-    background-color: white; /* Establece el fondo de los controles de audio */
+audio::-webkit-media-controls-enclosure {
+    background-color: rgb(107, 8, 236); /* Establece el fondo de los controles de audio */
+    border-radius: 0px;
 }
 
 /* ESTILOS PARA EL FOOTER */
 .contenedorFooter {
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(50, 49, 49);
 }
-.integrantes {
-    border: 1px solid black; /* Agrega borde negro */
+.contenedorFooter p {
+    font-size: 25px; /* Tamaño de fuente */
+    margin-top: 10px;
+    margin-left: 30px;
 }
-.integrantes ul {
+.nombres {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos bajen a la siguiente línea */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    
     list-style: none; /* Quita viñetas de la lista */
-    font-size: 18px; /* Tamaño de fuente */
-    margin: 0;
-    padding: 0;
+    font-size: 20px; /* Tamaño de fuente */
+    margin: 10px;
 }
-.integrantes ul li {
-    margin: 5px;
-    width: 40%; /* Establece el ancho de cada nombre al 40% para dos nombres por fila */
-    text-align: center; /* Centra el texto horizontalmente */
+.nombres li {
+    margin-right: 50px;
+    color: white;
+}
+/* Estilos para dispositivos móviles (ancho máximo de 600px) */
+@media (max-width: 600px) {
+    
 }

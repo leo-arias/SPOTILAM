@@ -5,40 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>SPOTILAM</title>
 </head>
 <body>
 
     <main>
-        <a href="index.html"><img src="img/logoT.webp" alt="logo"></a>
-        <div class="form-container">
-            <h1>Registro de Usuario</h1>
-            <form action="index.html">
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario" required>
-    
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena" required>
-
-                <div class="boton">
-                    <button type="submit">Iniciar Sesión</button>
-                    <p>¿No tenes una cuenta? <a href="registro.html">Regístrate</a></p>
+        <section class="box container">
+            <img src="img/icon2.png" alt="Spotylam-icon" class="icon">
+            <h4 id="h4">¡Bienvenido a Spotylam!</h4>
+            <h5>Ingresa tus datos</h5>
+            <form action="index.html" class="form">
+                <div class="inputs">
+                    <input class="controls" type="text" placeholder="Ingrese nombre de usuario" required>
+                    <input class="controls" type="password" placeholder="Ingrese contraseña" required>
                 </div>
+                <input class="boton" type="submit" value="Iniciar Sesion">
             </form>
-            
-        </div>
+            <p><a id="registrar" href="registro.html">Registrarme</a></p>
+        </section>
     </main>
     
     <footer class="contenedorFooter">
-        <div class="integrantes">
-            <ul> <!-- Lista de integrantes del grupo -->
-                <li>Leonardo Arias</li>
-                <li>Victoria Croce</li>
-                <li>Lucas Gavagnin</li>
-                <li>Kevin Cardozo</li>
-            </ul>
-        </div>
+        <p>Integrantes</p>
+        <ul class="nombres"> <!-- Lista de integrantes del grupo -->
+            <li>Lucas Daniel Gavagnin</li>
+            <li>Victoria Gisel Croce</li>
+            <li>Leonardo Arias</li>
+        </ul>
     </footer>
     
 </body>

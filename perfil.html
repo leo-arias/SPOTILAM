@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/perfil.css">
     <title>SPOTILAM</title>
 </head>
 <body>
     <header>
         <div class="container-header">
-            <div>
-                <a href="index.html"><img src="img/logoT.webp" alt="logo" class="logo"></a> <!-- <h1>SPOTILAM</h1> -->
-            </div>
+
+            <a href="index.html"><img src="img/logoT.webp" alt="logo" class="logo"></a> <!-- <h1>SPOTILAM</h1> -->
 
             <div class="info-usuario">
                 <div class="detalles-usuario">
-                    <h2>Gabriel</h2> <!-- Nombre del usuario -->
+                    <a href="perfil.html"><h2>Nombre</h2></a> <!-- Nombre del usuario -->
                     <a href="login.html">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
                 </div>
                 <a href="perfil.html"><img src="img/avatar.png" alt="Avatar de Usuario" class="imagen-avatar"></a> <!-- Avatar del usuario -->
@@ -26,24 +27,51 @@
     <main>
         
 
-        <!-- **************************************************************************
-        
-        Aca va el HTML para perfil
-        
-        ************************************************************************** -->
+        <section class="grid">
+            <div class="item1 items">
+                <div class="texto">
+                    <p>Tu plan</p>
+                    <h1>Versión gratuita</h1>
+                </div>
+                <img src="img/icon-black.png" alt="logo" class="logo">
+                <form action="premium.html" class="form">
+                    <input class="boton" type="submit" value="Explorar planes">
+                </form>
+            </div>
+            <div class="item2 items">
+                <img src="img/avatar-black.png" alt="avatar" class="avatar">
+                <div class="texto-avatar">
+                    <p><a>Cambiar avatar</a></p>
+                    <p><a>Eliminar avatar</a></p>
+                </div>
+            </div>
+            <div class="item3 items">
+                <h1>Mi perfil</h1>
+                <form class="form2">
+                    <input class="controls usuario" type="text" placeholder="Cambiar usuario" required />
+                    <input class="controls contra1" type="password" placeholder="Cambiar contraseña" required />
+                    <input class="controls contra2" type="password" placeholder="Repetir contraseña" required />
+                    <input class="controls corr1" type="email" placeholder="Cambiar correo" required />
+                    <input class="controls corr2" type="email" placeholder="Correo de recuperación" required />
+                    <input class="controls tel" type="tel" placeholder="Numero telefónico" />
+                    <div class="botones">
+                        <input type="submit" value="Guardar" class="boton boton-form">
+                        <a href="index.html"><input type="submit" value="Cancelar" class="boton boton-form"></a>
+                    </div>
+                </form>
+            </div>
+            <section>
         
         
     </main>
     
     <footer class="contenedorFooter">
-        <div class="integrantes">
-            <ul> <!-- Lista de integrantes del grupo -->
-                <li>Leonardo Arias</li>
-                <li>Victoria Croce</li>
-                <li>Lucas Gavagnin</li>
-                <li>Kevin Cardozo</li>
-            </ul>
-        </div>
+        <p>Integrantes</p>
+        <ul class="nombres"> <!-- Lista de integrantes del grupo -->
+            <li>Lucas Daniel Gavagnin</li>
+            <li>Victoria Gisel Croce</li>
+            <li>Leonardo Arias</li>
+        </ul>
     </footer>
     
 </body>

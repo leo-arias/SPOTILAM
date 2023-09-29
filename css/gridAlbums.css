@@ -1,9 +1,3 @@
-/* Estilos para el contenedor de álbumes */
-.contenedor {
-    max-height: 603px; /* Ajusta la altura máxima del contenedor */
-    overflow-y: auto; /* Habilita la barra de desplazamiento vertical */
-}
-
 /* Estilos para el diseño de cuadrícula */
 .grid {
     display: grid; /* Usa diseño de cuadrícula */
@@ -28,12 +22,10 @@
 /* Estilos para el nombre del álbum y el nombre del artista */
 .nombre-album {
     font-size: 30px; /* Tamaño de fuente */
-    color: black;
     font-weight: bolder; /* Fuente en negrita */
 }
 .nombre-artista {
     font-size: 25px; /* Tamaño de fuente */
-    color: black;
 }
 .nombre-album,
 .nombre-artista {
@@ -44,6 +36,8 @@
 /* Estilos para la imagen del álbum */
 .album-imagen {
     border: 2px solid black; /* Agrega borde negro */
+    border-radius: 8px;
+    box-shadow: 0 0 30px black;
 }
 
 /* Estilos para la estrella */
