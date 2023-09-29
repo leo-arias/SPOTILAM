@@ -8,7 +8,6 @@
 .buscador-lupa form {
     display: flex; 
     justify-content: center; /* Centra los elementos horizontalmente */
-    width: 50%;
     border-radius: 20px; /* Establece borde redondeado */
 }
 .buscadorNav {
@@ -16,17 +15,29 @@
     border: none; /* Quita borde */
     font-size: 16px; /* Tamaño de fuente */
     border-radius: 20px; /* Establece borde redondeado */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 330px; /* Ocupa todo el ancho disponible */
 }
 .lupa {
     width: 40px; /* Establece ancho del icono de lupa */
     height: 40px; /* Establece alto del icono de lupa */
     position: absolute; /* Posición absoluta con respecto a la barra de busqueda */
     top: 6px; /* Posición superior */
-    left: 375px; /* Posición izquierda */
+    left: 25px; /* Posición izquierda */
     background-image: url(../img/lupa.png); /* Establece la imagen para el icono de lupa */
     background-size: 28px 28px; /* Tamaño de la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-color: transparent; /* Fondo transparente para el icono de lupa */
     border: 0px; /* Quita borde al icono de lupa */
+}
+@media (min-width: 600px) {
+    .lupa {
+        top: 6px; /* Posición superior */
+        left: 385px; /* Posición izquierda */
+    }
+    .buscador-lupa form {
+        width: 50%;
+    }
+    .buscadorNav {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
 }

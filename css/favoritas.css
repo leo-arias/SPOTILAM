@@ -1,3 +1,7 @@
 .container-star svg {
     fill: yellow; /* Color de relleno de la estrella */
 }
+
+.titulo-principal h1 {
+    font-size: 28px;
+}
