@@ -101,11 +101,12 @@ main {
 }
 
 .boton {
-    width: 150px;
-    height: 40px;
+    width: 200px;
+    height: 70px;
     border: 2px solid rgb(230, 223, 223);
     border-radius: 10px;
     box-shadow: 0 0 5px #303030;
+    font-size: 25px;
 }
 
 .boton:hover {
@@ -137,7 +138,7 @@ main {
 
 .texto-avatar p a {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
     color: #000;
 }
@@ -173,6 +174,7 @@ main {
     padding: 10px;
     height: 50%;
     width: 100%;
+    font-size: 20px;
 }
 
 .usuario {

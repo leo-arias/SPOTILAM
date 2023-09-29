@@ -6,7 +6,7 @@ body {
     color: aliceblue;
 }
 main {
-    margin-bottom: 144px;
+    margin-bottom: 172px;
 }
 main h1 {
     display: flex;
@@ -84,8 +84,9 @@ input {
 }
 
 #botones input {
-    height: 50px;
-    width: 150px;
+    height: 70px;
+    width: 200px;
+    font-size: 30px;
 }
 
 #principio h1 {
@@ -128,6 +129,7 @@ input {
 a {
     text-decoration: none;
     color: aliceblue;
+    
 }
 
 footer {
@@ -157,8 +159,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    
 }
-
 .boton {
     border-radius: 15px;
     background: linear-gradient(rgb(78, 78, 78), rgb(147, 147, 147), rgb(255, 255, 255));
