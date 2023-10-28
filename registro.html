@@ -18,15 +18,28 @@
             </section>
 
             <section class="Container">
-                <form action="login.html" class="registro">
+                <form class="registro" novalidate>
                     <h4>Registro</h4>
-                    <input class="controls" type="text" id="usuario" placeholder="Usuario" required />
-                    <input class="controls" type="email" id="correo" placeholder="Correo" required />
-                    <input class="controls" type="password" id="contraseña" placeholder="Contraseña" required />
-                    <input class="controls" type="password" id="contraseña" placeholder="Repetir contraseña" required />
-                    <input class="controls" type="date" id="fecha-nac" required />
-                    <p>Estoy de acuerdo con lo Términos y condiciones.</p>
-                    <input class="boton" type="submit" value="Registrarme">
+                    <span id="usuario-error"></span>
+                    <input class="controls" type="text" id="usuario" placeholder="Usuario" required/>
+                    
+                    <span id="correo-error"></span>
+                    <input class="controls" type="email" id="correo" placeholder="Correo"/>
+
+                    <span id="contra-error"></span>
+                    <input class="controls" type="password" id="contraseña" placeholder="Contraseña"/>
+
+                    <span id="contra-repetida-error"></span>
+                    <input class="controls" type="password" id="contraseñaRepetida" placeholder="Repetir contraseña"/>
+
+                    <span id="fecha-error"></span>
+                    <input class="controls" type="date" id="fecha-nac"/>
+
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <p>Estoy de acuerdo con los Términos y Condiciones.</p>
+                    </div>
+                    <input class="boton" type="button" value="Registrarme" onclick="validarRegistro()">
                     <p><a href="login.html">Ya tengo una cuenta.</a></p>
                 </form>
             <section>
@@ -43,6 +56,7 @@
         </ul>
     </footer>
     
+    <script src="js/formularios.js"></script>
 </body>
 </html>
 

@@ -1,0 +1,98 @@
+function validarLogin() {
+    // Obtener el valor del campo de usuario
+    let nombre = document.getElementById("nombre").value;
+    let password = document.getElementById("password").value;
+    let nombreError = document.getElementById("nombre-error");
+    let passwordError = document.getElementById("password-error");
+
+    // Verificar si el campo está vacío
+    if (nombre === "") {
+        nombreError.textContent = "Campo obligatorio.";
+    } else {
+        nombreError.textContent = "";
+    }
+
+    // Verificar si el campo está vacío
+    if (password === "") {
+        passwordError.textContent = "Campo obligatorio.";
+    } else {
+        passwordError.textContent = "";
+    }
+
+    // Si no están vacíos, te manda a index.html
+    if (nombre !== "" && password !== "") {
+        window.location.href = "index.html";
+    }
+}
+
+function validarRegistro() {
+    let usuario = document.getElementById("usuario").value;
+    let usuarioError = document.getElementById("usuario-error");
+    let contra = document.getElementById("contraseña").value;
+    let contraRepetida = document.getElementById("contraseñaRepetida").value;
+    let contraError =  document.getElementById("contra-error");
+    let contraRepetidaError =  document.getElementById("contra-repetida-error");
+    let correo = document.getElementById("correo").value;
+    let correoError =  document.getElementById("correo-error");
+    let expresionRegularEmail = /^(.+\@.+\..+)$/;
+    let fechaNac = document.getElementById("fecha-nac").value;
+    let fechaError =  document.getElementById("fecha-error");
+    let expresionRegularFecha = /^\d{4}\-\d{2}\-\d{2}$/ ;
+    let validadoCompleto = true;
+
+    // Validar Usuario
+    if (usuario === "") {
+        usuarioError.textContent = "Campo obligatorio.";
+        validadoCompleto = false;
+    } else if (usuario.length < 4) {
+        usuarioError.textContent = "El Usuario debe ser mayor a 4 caracteres.";
+        validadoCompleto = false;
+    } else if (usuario.length > 8) {
+        usuarioError.textContent = "El Usuario debe ser menor a 8 caracteres.";
+        validadoCompleto = false;
+    } else  {
+        usuarioError.textContent = "";
+    }
+
+    // Validar Contraseña
+    if (contra === "" || contraRepetida === "") {
+        contraError.textContent = "Campo obligatorio.";
+        contraRepetidaError.textContent = "Campo obligatorio."
+        validadoCompleto = false;
+    } else if (contraRepetida !== contra) {
+        contraError.textContent = "Las contraseñas no coinciden."
+        contraRepetidaError.textContent = "Las contraseñas no coinciden."
+        validadoCompleto = false;
+    } else  {
+        contraError.textContent = "";
+        contraRepetidaError.textContent = "";
+    }
+
+    // Validar Email
+    if (correo === "") {
+        correoError.textContent = "Campo obligatorio.";
+        validadoCompleto = false;
+    } else if (expresionRegularEmail.test(correo) == false) {
+        correoError.textContent = "Correo electrónico no válido.";
+        validadoCompleto = false;
+    } else  {
+        correoError.textContent = "";
+    }
+
+    // Validar Fecha
+    if (fechaNac === "") {
+        fechaError.textContent = "Campo obligatorio.";
+        validadoCompleto = false;
+    } else if (expresionRegularFecha.test(fechaNac) == false) {
+        console.log(fechaNac);
+        fechaError.textContent = "Fecha no válida.";
+        validadoCompleto = false;
+    } else  {
+        fechaError.textContent = "";
+    }
+
+    // Si todos los campos son validos, te manda a login.html
+    if (validadoCompleto) {
+        window.location.href = "login.html";
+    }
+}

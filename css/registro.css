@@ -91,3 +91,12 @@ body {
     transition: input 2s 10s ease;
     cursor: pointer;
 }
+.checkbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+span {
+    color: red;
+  }
