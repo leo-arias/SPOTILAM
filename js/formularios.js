@@ -1,13 +1,20 @@
 function validarLogin() {
     // Obtener el valor del campo de usuario
-    let nombre = document.getElementById("nombre").value;
+    let nombreDeUsuario = document.getElementById("nombre").value;
     let password = document.getElementById("password").value;
     let nombreError = document.getElementById("nombre-error");
     let passwordError = document.getElementById("password-error");
+    let nombreGuardado = localStorage.getItem("nombreDeUsuario");
+    let contraGuardada = localStorage.getItem("contraseña");
+    let validadoCompleto = true;
 
     // Verificar si el campo está vacío
-    if (nombre === "") {
+    if (nombreDeUsuario === "") {
         nombreError.textContent = "Campo obligatorio.";
+        validadoCompleto = false;
+    } else if (nombreDeUsuario !== nombreGuardado) {
+        nombreError.textContent = "El usuario es incorrecto";
+        validadoCompleto = false;
     } else {
         nombreError.textContent = "";
     }
@@ -15,12 +22,16 @@ function validarLogin() {
     // Verificar si el campo está vacío
     if (password === "") {
         passwordError.textContent = "Campo obligatorio.";
+        validadoCompleto = false;
+    } else if (password !== contraGuardada) {
+        passwordError.textContent = "La contraseña es incorrecta";
+        validadoCompleto = false;
     } else {
         passwordError.textContent = "";
     }
 
     // Si no están vacíos, te manda a index.html
-    if (nombre !== "" && password !== "") {
+    if (validadoCompleto) {
         window.location.href = "index.html";
     }
 }
@@ -38,6 +49,8 @@ function validarRegistro() {
     let fechaNac = document.getElementById("fecha-nac").value;
     let fechaError =  document.getElementById("fecha-error");
     let expresionRegularFecha = /^\d{4}\-\d{2}\-\d{2}$/ ;
+    let checkbox = document.getElementById("checkbox");
+    let checkboxError = document.getElementById("checkbox-error");
     let validadoCompleto = true;
 
     // Validar Usuario
@@ -52,6 +65,7 @@ function validarRegistro() {
         validadoCompleto = false;
     } else  {
         usuarioError.textContent = "";
+        localStorage.setItem("nombreDeUsuario", usuario);
     }
 
     // Validar Contraseña
@@ -66,6 +80,7 @@ function validarRegistro() {
     } else  {
         contraError.textContent = "";
         contraRepetidaError.textContent = "";
+        localStorage.setItem("contraseña", contra);
     }
 
     // Validar Email
@@ -89,6 +104,14 @@ function validarRegistro() {
         validadoCompleto = false;
     } else  {
         fechaError.textContent = "";
+    }
+
+    // Validar el checkbox
+    if (!(checkbox.checked)) {
+        checkboxError.textContent = "Debes aceptar los Términos y Condiciones.";
+        validadoCompleto = false;
+    } else {
+        checkboxError.textContent = "";
     }
 
     // Si todos los campos son validos, te manda a login.html
