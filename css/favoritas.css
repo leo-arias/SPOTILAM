@@ -1,7 +1,35 @@
 .container-star svg {
     fill: yellow; /* Color de relleno de la estrella */
 }
-
 .titulo-principal h1 {
-    font-size: 28px;
+    font-size: 40px;
+}
+table {
+    color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+.titulos-columnas {
+    font-size: 30px;
+}
+th {
+    padding: 20px; /* Agrega relleno alrededor del enlace */
+    border: 2px solid black; /* Agrega borde negro */
+    text-align: center;
+    cursor: pointer;
+}
+th:hover {
+    background-color: #ccc;
+}
+.cuerpo-columnas {
+    font-size: 20px;
+}
+td {
+    padding: 20px; /* Agrega relleno alrededor del enlace */
+    border: 2px solid black; /* Agrega borde negro */
+    text-align: center;
+    cursor: pointer;
+}
+.play-icon {
+    font-size: 50px; /* Ajusta el tamaño del icono según tus preferencias */
 }
