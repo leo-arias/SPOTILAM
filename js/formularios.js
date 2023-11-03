@@ -32,7 +32,7 @@ function validarLogin() {
 
     // Si no están vacíos, te manda a index.html
     if (validadoCompleto) {
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     }
 }
 
