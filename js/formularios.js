@@ -116,6 +116,6 @@ function validarRegistro() {
 
     // Si todos los campos son validos, te manda a login.html
     if (validadoCompleto) {
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     }
 }
