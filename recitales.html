@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+
+    
+    <link href='fullcalendar/core/main.css' rel='stylesheet'/>
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet'/>
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+
+    <link rel="stylesheet" href="css/gridAlbums.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recitales.css">
+    <title>SPOTILAM</title>
+</head>
+
+<body>
+    <div class="main-container"> <!-- Contenedor principal -->
+
+        <div class="sidebar"> <!-- Barra lateral -->
+            <nav>
+                <ul> <!-- Enlaces de navegación -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buscar.html">Buscar</a></li>
+                    <li><a href="albums.html">Mis Álbums</a></li>
+                    <li><a href="favoritas.html">Mis Favoritas</a></li>
+                    <li><a href="recitales.html" class="activo">Recitales</a></li>
+                </ul>
+            </nav>
+
+            <section class="musica-sonando"> <!-- Sección de música sonando -->
+
+                <div class="album"> <!-- Información de la canción en reproducción -->
+                    <a href="sonando.html">
+                        <img src="img/sonando.webp" alt="imagen album">
+                        <div class="album-informacion">
+                            <h3 class="nombre-album">Blinding Lights</h3>
+                            <p class="nombre-artista">The Weeknd</p>
+                        </div>
+                    </a>
+
+                    <label class="container-star"> <!-- Estrella de favoritos -->
+                        <input type="checkbox">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                            </path>
+                        </svg>
+                    </label>
+                </div>
+            </section>
+        </div>
+
+        <div class="contenido-principal"> <!-- Contenido principal -->
+            <header>
+                <div class="container-header">
+                    <div>
+                        <a href="index.html"><img src="img/logoT.webp" alt="logo" class="logo"></a> <!-- Logo -->
+                    </div>
+
+                    <div class="info-usuario"> <!-- Información del usuario -->
+                        <div class="detalles-usuario">
+                            <a href="perfil.html">
+                                <h2 id="nombre-usuario"></h2>
+                            </a> <!-- Nombre del usuario -->
+                            <a href="login.html">Cerrar Sesión</a> <!-- Enlace para cerrar sesión -->
+                        </div>
+                        <a href="perfil.html"><img src="img/avatar.png" alt="Avatar de Usuario"
+                                class="imagen-avatar"></a> <!-- Avatar del usuario -->
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <section class="contenedor">
+
+                    <div id="popup-container" class="popup-container">
+                        <div class="popup-content">
+                            <h2>Próximo Recital</h2>
+                            <p>TAYLOR SWIFT | THE ERAS TOUR</p>
+                            <p>Fecha: 9 de Noviembre</p>
+                            <p>Hora: 21:00 hrs</p>
+                            <p>Estadio: River Plate</p>
+                            <button id="close-popup" class="popup-close-button">Cerrar</button>
+                        </div>
+                    </div>
+
+
+                    <div class="container-carro">
+                        <div class="options">
+                            <div class="option active" style="--optionBackground:url(/img/1.webp);">
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info">
+                                        <div class="main">Harry Styles</div>
+                                        <div class="sub">Movistar Arena 25/04</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option" style="--optionBackground:url(/img/2.webp);">
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info">
+                                        <div class="main">Taylor Swift</div>
+                                        <div class="sub">River Plate 11/11</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option" style="--optionBackground:url(/img/3.webp);">
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info">
+                                        <div class="main">Travis Scott</div>
+                                        <div class="sub">Primavera Sound 09/03</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option" style="--optionBackground:url(/img/4.webp);">
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info">
+                                        <div class="main">Ariana Grande</div>
+                                        <div class="sub">River Plate 20/06</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="option" style="--optionBackground:url(/img/5.webp);">
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info">
+                                        <div class="main">Drake</div>
+                                        <div class="sub">Velez Sarsfield 02/12</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="option" style="--optionBackground:url(/img/6.webp);">
+                                <div class="shadow"></div>
+                                <div class="label">
+                                    <div class="info">
+                                        <div class="main">Billie Eilish</div>
+                                        <div class="sub">Lollapalooza 13/08</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article id="calendario"></article>
+
+                </section>
+            </main>
+
+            <section class="reproductor"> <!-- Reproductor de audio -->
+                <audio controls>
+                    <source src="audio/The Weeknd - Blinding Lights.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+        </div>
+    </div>
+
+    <footer class="contenedorFooter">
+        <p>Integrantes</p>
+        <ul class="nombres"> <!-- Lista de integrantes del grupo -->
+            <li>Lucas Daniel Gavagnin</li>
+            <li>Victoria Gisel Croce</li>
+            <li>Leonardo Arias</li>
+        </ul>
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/recitales.js"></script>
+
+</body>
+
+</html>
