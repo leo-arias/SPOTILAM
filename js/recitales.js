@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
           title: "Taylor Swift",
           start: "2023-11-09",
-          end: "2023-11-11",
+          end: "2023-11-12",
         }
       ],
     });
