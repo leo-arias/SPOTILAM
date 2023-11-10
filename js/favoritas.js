@@ -53,6 +53,10 @@ for (let i = 1; i < filas.length; i++) {
         cancionSonandoImagen.src = imagenAlbum;
         cancionSonandoTitulo.textContent = nombreCancion;
         cancionSonandoArtista.textContent = nombreAlbum;
+
+        localStorage.setItem("nombreDeCancion", nombreCancion);
+        localStorage.setItem("nombreDeAlbum", nombreAlbum);
+        localStorage.setItem("imagenDeAlbum", imagenAlbum);
     });
 }
 
