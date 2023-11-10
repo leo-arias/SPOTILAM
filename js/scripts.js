@@ -15,11 +15,13 @@ let cancionSonandoImagen = document.getElementById("cancionSonandoImagen");
 let cancionSonandoTitulo = document.getElementById("cancionSonandoTitulo");
 let cancionSonandoArtista = document.getElementById("cancionSonandoArtista");
 
-if (imagenAlbum === null) {
-    cancionSonandoImagen.src = "img/sonando.webp";
+
+
+if (nombreCancion === null) {
+    cancionSonandoTitulo.textContent = "No hay canción sonando";
 } else {
+    cancionSonandoTitulo.textContent = nombreCancion;
     cancionSonandoImagen.src = imagenAlbum;
+    cancionSonandoArtista.textContent = nombreAlbum;
 }
 
-cancionSonandoTitulo.textContent = nombreCancion;
-cancionSonandoArtista.textContent = nombreAlbum;
