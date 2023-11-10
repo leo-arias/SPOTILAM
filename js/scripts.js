@@ -3,7 +3,11 @@ const nombreGuardado = localStorage.getItem("nombreDeUsuario");
 
 // Actualiza el nombre de usuario
 let nombre = document.getElementById("nombre-usuario");
-nombre.textContent = nombreGuardado;
+
+
+if (!(nombreGuardado === null)) {
+    nombre.textContent = nombreGuardado;
+}
 
 // Recuperar la cancion sonando del localStorage
 const nombreCancion = localStorage.getItem("nombreDeCancion");
@@ -15,11 +19,7 @@ let cancionSonandoImagen = document.getElementById("cancionSonandoImagen");
 let cancionSonandoTitulo = document.getElementById("cancionSonandoTitulo");
 let cancionSonandoArtista = document.getElementById("cancionSonandoArtista");
 
-
-
-if (nombreCancion === null) {
-    cancionSonandoTitulo.textContent = "No hay canción sonando";
-} else {
+if (!(nombreCancion === null)) {
     cancionSonandoTitulo.textContent = nombreCancion;
     cancionSonandoImagen.src = imagenAlbum;
     cancionSonandoArtista.textContent = nombreAlbum;
