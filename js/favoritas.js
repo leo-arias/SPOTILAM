@@ -31,7 +31,7 @@ function sortTable(columnIndex, ascending) {
     rows.forEach(row => tbody.appendChild(row));
 }
 
-// Obtén una referencia a la tabla y todas las filas de la tabla
+// Variables de una referencia a la tabla y todas las filas de la tabla
 const tabla = document.querySelector("table");
 const filas = tabla.querySelectorAll("tr");
 
@@ -40,7 +40,7 @@ for (let i = 1; i < filas.length; i++) {
     const fila = filas[i];
     // Agrega un evento clic a cada fila de la tabla
     fila.addEventListener("click", function () {
-        // Obtén los elementos relevantes de la fila seleccionada
+        // Variables de los elementos relevantes de la fila seleccionada
         const nombreCancion = fila.querySelector(".nombre-cancion").textContent;
         const nombreAlbum = fila.querySelector(".nombre-album").textContent;
         const imagenAlbum = fila.querySelector(".album-imagen").src;

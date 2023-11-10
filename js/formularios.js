@@ -114,7 +114,7 @@ function validarRegistro() {
         checkboxError.textContent = "";
     }
 
-    // Si todos los campos son validos, te manda a login.html
+    // Si todos los campos son validos, te manda a index.html
     if (validadoCompleto) {
         window.location.href = "index.html";
     }

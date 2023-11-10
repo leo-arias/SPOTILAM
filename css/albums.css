@@ -1,9 +1,9 @@
 .container-star svg {
-    fill: yellow; /* Color de relleno de la estrella */
+  fill: yellow; /* Color de relleno de la estrella */
 }
 .favorito {
-    display: none;
+  display: none;
 }
 .titulo-principal h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
